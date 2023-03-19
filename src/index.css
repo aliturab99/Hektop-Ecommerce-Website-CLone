@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
+}
+
+:root{
+  --purple : #800080;
+  --off-purple: #9F63B5;
+  --navy-blue: #151875;
+  --off-navy-blue: #3F509E ;
+  --pink: #FB2E86 ;
+  --red: #FB2448 ;
+  --blue: #2F1AC4 ;
+  --sky-blue: #F3F9FF ;
+  --off-blue: #151875 ;
+  --pantone-purple: #E0D3F5 ;
+  --violet: #7E33E0;
+  --white: #fff;
+  --josefin: "Josefin Sans";
 }

@@ -1,17 +1,14 @@
 import { Box, Grid, IconButton, Typography } from '@mui/material';
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import styles from "./header.module.css";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { themeStyles } from '../../../themeStyles';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import MenuLink from '../menu/MenuLink';
+import NavBar from './NavBar';
 
 
 
@@ -19,6 +16,30 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 function Header() {
+    const data = [
+        {
+          id: 'english',
+          label: 'English',
+          options: [
+            {to: "/English", option: "English"},
+            {to: "/urdu", option: "Urdu"},
+            {to: "/hindi", option: "Hindi"},
+          ],
+          anchorEl: null,
+          open: false
+        },
+        {
+          id: 'currency',
+          label: 'USD',
+          options: [
+            {to: "/usd", option: "USD"},
+            {to: "/urdu", option: "Urdu"},
+            {to: "/hindi", option: "Hindi"},
+          ],
+          anchorEl: null,
+          open: false
+        }
+      ];
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -45,61 +66,8 @@ function Header() {
                     <Grid lg={1}></Grid>
 
                     <Grid item md={5} display={"flex"} >
-                        <Box>
-                            <Button
-                                endIcon={<KeyboardArrowDownIcon sx={{ ...themeStyles.topbarIcon }} />}
-                                sx={{ ...themeStyles.btnMenu }}
-                                id="fade-button"
-                                aria-controls={open ? 'fade-menu' : undefined}
-                                aria-haspopup="true"
-                                aria-expanded={open ? 'true' : undefined}
-                                onClick={handleClick}
-                            >
-                                English
-                            </Button>
-                            <Menu
-                                id="fade-menu"
-                                MenuListProps={{
-                                    'aria-labelledby': 'fade-button',
-                                }}
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                TransitionComponent={Fade}
-                            >
-                                <MenuItem onClick={handleClose}>Urdu</MenuItem>
-                                <MenuItem onClick={handleClose}>Hindi</MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
-                            </Menu>
-                        </Box>
-
-                        <Box>
-                            <Button
-                                endIcon={<KeyboardArrowDownIcon sx={{ ...themeStyles.topbarIcon }} />}
-                                sx={{ ...themeStyles.btnMenu }}
-                                id="fade-button"
-                                aria-controls={open ? 'fade-menu' : undefined}
-                                aria-haspopup="true"
-                                aria-expanded={open ? 'true' : undefined}
-                                onClick={handleClick}
-                            >
-                                USD
-                            </Button>
-                            <Menu
-                                id="fade-menu"
-                                MenuListProps={{
-                                    'aria-labelledby': 'fade-button',
-                                }}
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                TransitionComponent={Fade}
-                            >
-                                <MenuItem onClick={handleClose}>$Dollar</MenuItem>
-                                <MenuItem onClick={handleClose}>Pkr</MenuItem>
-                                <MenuItem onClick={handleClose}>Youn</MenuItem>
-                            </Menu>
-                        </Box>
+                            <MenuLink data={data} />
+                            
                         <Button
                             endIcon={<PersonOutlineIcon sx={{ ...themeStyles.topbarIcon }} />}
                             sx={{ ...themeStyles.btnMenu }}>
@@ -121,6 +89,10 @@ function Header() {
                 </Grid>
             </Box>
             {/* top bar ended */}
+
+            {/* Navbar is started */}
+                <NavBar />
+            {/* Navbar is Ended */}
         </header>
     )
 }

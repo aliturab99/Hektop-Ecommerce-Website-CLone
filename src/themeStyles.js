@@ -11,14 +11,20 @@ export const themeStyles = {
         "alignItems": "center",
     },
     btnMenu : {
-        "color": "var(--white)",
+        "color": "#fff",
         "textTransform": "capitalize",
         "fontFamily": "var(--josefin)",
         "fontSize": "16px",
         "fontWeight": "600",
-        "margin" : "0px"
+        "textDecoration": "none",
     },
     topbarIcon: {
         "marginLeft": "-8px"
-    }
+    },
+    menuLink:{
+        "color": "black",
+        "fontFamily": "var(--josefin)",
+        "textDecoration": "none",
+    },
+    
 }

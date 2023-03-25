@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 
 
 *{
@@ -21,5 +23,21 @@
   --white: #fff;
   --josefin: "Josefin Sans";
   --bg-color : "#e5e5e5"
-  --gray : #E7E6EF
+  --gray : #E7E6EF;
+  --light-purple: #f2f0ff;
+  --lato: "Lato sans-serif";
+  --light-purple: #F2F0FF;
+  --soft-blue: #8A8FB9;
+  --heading-color: #1A0B5B;
+}
+
+
+.slick-dots li button:before {
+  font-size: 10px;
+  background-color: var(--pink);
+  height: 10px;
+  width: 10px;
+  text-indent: -9999px;
+  overflow:hidden;
+  transform: rotate(45deg);
 }

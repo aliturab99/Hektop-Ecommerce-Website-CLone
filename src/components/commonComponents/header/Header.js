@@ -20,6 +20,7 @@ function Header() {
         {
           id: 'english',
           label: 'English',
+          to: "/test",
           options: [
             {to: "/English", option: "English"},
             {to: "/urdu", option: "Urdu"},
@@ -31,6 +32,7 @@ function Header() {
         {
           id: 'currency',
           label: 'USD',
+          to: "/test",
           options: [
             {to: "/usd", option: "USD"},
             {to: "/urdu", option: "Urdu"},
@@ -54,16 +56,16 @@ function Header() {
             {/* top bar started */}
             <Box fontFamily={"var(--josefin)"} >
                 <Grid container sx={{ ...themeStyles.topBar }} >
-                    <Grid lg={1}></Grid>
-                    <Grid item lg={5} alignItems={"center"} display={"flex"} justifyContent={"space-evenly"} >
+                    <Grid md={1}></Grid>
+                    <Grid item md={5} alignItems={"center"} display={"flex"} justifyContent={"space-evenly"} >
                         <Box>
-                            <Typography className='text' variant='body1'><MailOutlineIcon sx={{ verticalAlign: "middle", marginRight: "10px" }} />mhhasanul@gmail.com</Typography>
+                            <Typography className='text' variant='body1'><MailOutlineIcon sx={{ verticalAlign: "middle", marginRight: "10px" }} />syedyawaraliturab@gmail.com</Typography>
                         </Box>
                         <Box>
                             <Typography fontFamily={"var(--josefin)"} variant='body1'><PhoneInTalkIcon sx={{ verticalAlign: "middle", marginRight: "10px" }} />(12345)67890</Typography>
                         </Box>
                     </Grid>
-                    <Grid lg={1}></Grid>
+                    <Grid item md={1}></Grid>
 
                     <Grid item md={5} display={"flex"} >
                             <MenuLink data={data} />

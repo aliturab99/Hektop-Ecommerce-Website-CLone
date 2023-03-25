@@ -5,9 +5,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 
-function MenuLink({ data }) {
+function MenuLink({ data, styleObj,menuStyle }) {
 
     const [dropdowns, setDropdowns] = useState(data || []);
 
@@ -38,7 +38,7 @@ function MenuLink({ data }) {
                             aria-haspopup="true"
                             aria-expanded={dropdown.open ? 'true' : undefined}
                             onClick={(event) => handleClick(index, event)}
-                            sx={{ ...themeStyles.btnMenu }}
+                            sx={{ ...themeStyles.btnMenu, ...styleObj }}
                             endIcon={<KeyboardArrowDownIcon style={{ ...themeStyles.btnMenuIcon }} />}
                         >
                             {dropdown.label}
@@ -56,7 +56,7 @@ function MenuLink({ data }) {
                         >
                             {dropdown.options.map((option, index) => (
                                 <MenuItem key={index} onClick={() => handleClose(index)}>
-                                    <Link to={option} style={{ ...themeStyles.menuLink }}>{option}</Link>
+                                    <NavLink  to={option.to} style={{ ...themeStyles.menuLink, ...styleObj }}>{option.option}</NavLink>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -66,11 +66,11 @@ function MenuLink({ data }) {
                         sx={{ ...themeStyles.btnMenu }}
                         key={dropdown.id}
                     >
-                        <Link style={{ ...themeStyles.btnMenu }}
-                            to={dropdown.label}
+                        <NavLink style={{ ...themeStyles.btnMenu, ...styleObj, display: { xs: 'block', md: 'flex'}}}
+                            
                         >
                             {dropdown.label}
-                        </Link>
+                        </NavLink>
                     </Button>
 
             ))}

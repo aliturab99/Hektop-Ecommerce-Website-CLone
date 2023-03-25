@@ -25,6 +25,16 @@ export const themeStyles = {
         "color": "black",
         "fontFamily": "var(--josefin)",
         "textDecoration": "none",
+        display: "block"
     },
-    
+    searchInputBtn: {
+        borderRadius: 0,
+        backgroundColor: 'var(--pink)',
+        '&:hover': {
+          backgroundColor: 'var(--pink)',
+        },
+        '&:focus': {
+          backgroundColor: 'var(--pink)',
+        },
+    }
 }

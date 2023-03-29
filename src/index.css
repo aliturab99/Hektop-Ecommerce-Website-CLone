@@ -11,7 +11,6 @@
 :root{
   --purple : #800080;
   --off-purple: #9F63B5;
-  --navy-blue: #151875;
   --off-navy-blue: #3F509E ;
   --pink: #FB2E86 ;
   --red: #FB2448 ;
@@ -25,10 +24,12 @@
   --bg-color : "#e5e5e5"
   --gray : #E7E6EF;
   --light-purple: #f2f0ff;
-  --lato: "Lato sans-serif";
+  --lato: "Lato";
   --light-purple: #F2F0FF;
   --soft-blue: #8A8FB9;
   --heading-color: #1A0B5B;
+  --product-background: #F6F7FB;
+  --product-background-hover: #F7F7F7;
 }
 
 

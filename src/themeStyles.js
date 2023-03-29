@@ -1,4 +1,21 @@
 
+import { createTheme } from '@mui/material/styles';
+
+export const theme = createTheme({
+  typography: {
+    fontFamily: 'var(--lato)',
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'capitalize',
+        },
+      },
+    },
+  },
+});
+
 
 export const themeStyles = {
     topBar: {
@@ -36,5 +53,27 @@ export const themeStyles = {
         '&:focus': {
           backgroundColor: 'var(--pink)',
         },
+    },
+    mainHeading : {
+        fontFamily: 'var(--josefin)',
+        fontSize: "42px",
+        lineHeight: "49px",
+        color: "var(--haeding-color)",
+        fontWeight: 700
+    },
+    productTitle: {
+        fontStyle: 'normal',
+        fontWeight: 700,
+        fontSize: '18px',
+        lineHeight: '22px',
+        color: 'var(--pink)',
+      },
+    productCode: {
+        fontFamily: 'Lato',
+        fontStyle: "normal",
+        fontWeight: 400,
+        fontSize: "14px",
+        lineHeight: "17px",
+        color: "var(--off-blue)",
     }
 }

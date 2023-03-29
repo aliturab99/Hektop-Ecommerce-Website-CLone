@@ -152,13 +152,13 @@ function NavBar() {
                                 id="menu-appbar"
                                 anchorEl={anchorElNav}
                                 anchorOrigin={{
-                                    vertical: 'bottom',
+                                    vertical: 'top',
                                     horizontal: 'right',
                                 }}
                                 keepMounted
                                 transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'left',
+                                    vertical: 'bottom',
+                                    horizontal: 'right',
                                 }}
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}

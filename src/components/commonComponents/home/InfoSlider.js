@@ -58,6 +58,82 @@ function InfoSlider() {
                     <img src={sofa} width={"100%"} />
                 </Grid>
            </Grid>
+
+
+           <Grid container sx={{height: { xs: 'auto', md: '80vh' }, display: 'flex !important', 'backgroundColor': 'var(--light-purple)' }}>
+                <Grid item md={2} xs={12} sx={{ display: { xs: 'flex', md: 'block' }, justifyContent: { xs: 'center', md: 'block' } }}>
+                    <img src={bell} width={200} />
+                </Grid>
+                <Grid item md={6} xs={12} sx={{ display: 'flex', textAlign: {xs: 'center', md: 'left'}, 'alignItems': 'center' }}>
+                    <Box dipslay="flex" alignItems="center">
+                        <Typography variant="subtitle1" color="text.secondary" component="div" sx={{ 'color': 'var(--pink)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '700','fontSize': '16px','lineHeight': '28px' }}>
+                            Best Furniture For Your Castle....
+                        </Typography>
+                        <Typography component="div" variant="h3" sx={{ 'fontFamily': 'var(--josefin)', 'fontWeight': 'bold', 'lineHeight': '70px', 'letterSpacing': '1.5' }}>
+                            New Furniture Collection
+                            Trends in 2020
+                        </Typography>
+                        <Typography my={3} component="div" variant="p" sx={{ 'color': 'var(--soft-blue)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '600','fontSize': '16px','lineHeight': '28px' }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
+                            in phasellus non in justo.
+                        </Typography>
+                        <Button variant='contained' style={{'backgroundColor':'var(--pink)', 'borderRadius': 0, 'padding': '16px 40px', 'fontFamily': 'Josefin Sans', 'fontSize': '17px', 'letterSpacing': '0.02em'}} >Shop Now</Button>
+                    </Box>
+                </Grid>
+                <Grid item md={4} xs={12} sx={{ display: 'flex', 'alignItems': 'center', 'paddingRight': { md: '20px' }, marginTop: { xs: '15px'} }}
+>
+                    <img src={sofa} width={"100%"} />
+                </Grid>
+           </Grid>
+           <Grid container sx={{height: { xs: 'auto', md: '80vh' }, display: 'flex !important', 'backgroundColor': 'var(--light-purple)' }}>
+                <Grid item md={2} xs={12} sx={{ display: { xs: 'flex', md: 'block' }, justifyContent: { xs: 'center', md: 'block' } }}>
+                    <img src={bell} width={200} />
+                </Grid>
+                <Grid item md={6} xs={12} sx={{ display: 'flex', textAlign: {xs: 'center', md: 'left'}, 'alignItems': 'center' }}>
+                    <Box dipslay="flex" alignItems="center">
+                        <Typography variant="subtitle1" color="text.secondary" component="div" sx={{ 'color': 'var(--pink)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '700','fontSize': '16px','lineHeight': '28px' }}>
+                            Best Furniture For Your Castle....
+                        </Typography>
+                        <Typography component="div" variant="h3" sx={{ 'fontFamily': 'var(--josefin)', 'fontWeight': 'bold', 'lineHeight': '70px', 'letterSpacing': '1.5' }}>
+                            New Furniture Collection
+                            Trends in 2020
+                        </Typography>
+                        <Typography my={3} component="div" variant="p" sx={{ 'color': 'var(--soft-blue)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '600','fontSize': '16px','lineHeight': '28px' }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
+                            in phasellus non in justo.
+                        </Typography>
+                        <Button variant='contained' style={{'backgroundColor':'var(--pink)', 'borderRadius': 0, 'padding': '16px 40px', 'fontFamily': 'Josefin Sans', 'fontSize': '17px', 'letterSpacing': '0.02em'}} >Shop Now</Button>
+                    </Box>
+                </Grid>
+                <Grid item md={4} xs={12} sx={{ display: 'flex', 'alignItems': 'center', 'paddingRight': { md: '20px' }, marginTop: { xs: '15px'} }}
+>
+                    <img src={sofa} width={"100%"} />
+                </Grid>
+           </Grid>
+           <Grid container sx={{height: { xs: 'auto', md: '80vh' }, display: 'flex !important', 'backgroundColor': 'var(--light-purple)' }}>
+                <Grid item md={2} xs={12} sx={{ display: { xs: 'flex', md: 'block' }, justifyContent: { xs: 'center', md: 'block' } }}>
+                    <img src={bell} width={200} />
+                </Grid>
+                <Grid item md={6} xs={12} sx={{ display: 'flex', textAlign: {xs: 'center', md: 'left'}, 'alignItems': 'center' }}>
+                    <Box dipslay="flex" alignItems="center">
+                        <Typography variant="subtitle1" color="text.secondary" component="div" sx={{ 'color': 'var(--pink)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '700','fontSize': '16px','lineHeight': '28px' }}>
+                            Best Furniture For Your Castle....
+                        </Typography>
+                        <Typography component="div" variant="h3" sx={{ 'fontFamily': 'var(--josefin)', 'fontWeight': 'bold', 'lineHeight': '70px', 'letterSpacing': '1.5' }}>
+                            New Furniture Collection
+                            Trends in 2020
+                        </Typography>
+                        <Typography my={3} component="div" variant="p" sx={{ 'color': 'var(--soft-blue)', 'fontFamily': 'Lato','fontStyle': 'normal','fontWeight': '600','fontSize': '16px','lineHeight': '28px' }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
+                            in phasellus non in justo.
+                        </Typography>
+                        <Button variant='contained' style={{'backgroundColor':'var(--pink)', 'borderRadius': 0, 'padding': '16px 40px', 'fontFamily': 'Josefin Sans', 'fontSize': '17px', 'letterSpacing': '0.02em'}} >Shop Now</Button>
+                    </Box>
+                </Grid>
+                <Grid item md={4} xs={12} sx={{ display: 'flex', 'alignItems': 'center', 'paddingRight': { md: '20px' }, marginTop: { xs: '15px'} }}>
+                    <img src={sofa} width={"100%"} />
+                </Grid>
+           </Grid>
     </Slider>
   )
 }

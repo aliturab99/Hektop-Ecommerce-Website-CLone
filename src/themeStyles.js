@@ -84,5 +84,21 @@ export const themeStyles = {
       lineHeight: '22px',
       textTransform: 'capitalize',
       padding: "0 30px"
+    },
+    uniqueFeature: {
+      fontFamily: 'Josefin Sans',
+      fontSize: '14px',
+      lineHeight: '16px',
+      letterSpacing:" 0.02em",
+      color: '#151875',
+
+    },
+    uniqueFeaturePrice: {
+      fontFamily: 'Lato',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      fontSize: '14px',
+      lineHeight: '17px',
+      color: '#151875',
     }
 }

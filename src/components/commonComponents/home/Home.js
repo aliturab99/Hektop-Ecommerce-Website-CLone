@@ -15,8 +15,10 @@ function Home() {
           {/* <FeaturedProducts /> */}
           {/* <LatestProducts /> */}
           {/* <OffersList /> */}
-          <UniqueFeatures />
       </Container>
+      <Box mt={5} display="flex" justifyContent='center' sx={{ 'backgroundColor': 'var(--light-purple)' }}>
+          <UniqueFeatures />
+            </Box>
     </>
   )
 }

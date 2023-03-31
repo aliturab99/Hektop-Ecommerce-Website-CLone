@@ -75,5 +75,14 @@ export const themeStyles = {
         fontSize: "14px",
         lineHeight: "17px",
         color: "var(--off-blue)",
+    },
+    singleTab: {
+      fontFamily: "var(--lato)",
+      fontStyle: 'normal',
+      fontWeight: '400',
+      fontSize: '18px',
+      lineHeight: '22px',
+      textTransform: 'capitalize',
+      padding: "0 30px"
     }
 }

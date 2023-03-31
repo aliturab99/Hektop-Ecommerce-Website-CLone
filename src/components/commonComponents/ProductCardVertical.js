@@ -1,5 +1,4 @@
 import { Box, Grid, Paper, Typography, Button } from '@mui/material';
-import React from 'react';
 import { themeStyles,theme } from '../../themeStyles';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';

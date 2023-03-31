@@ -10,7 +10,7 @@ import featureimg3 from "../../../static/images/products/featured3.png"
 import featureimg4 from "../../../static/images/products/featured4.png"
 
 function FeaturedProducts() {
-const theme = useTheme();
+  const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
 
@@ -27,9 +27,9 @@ const theme = useTheme();
   return (
 
     <>
-        <Box  mt={12} >
-            <Typography sx={{...themeStyles.mainHeading,textAlign: "center"}}>Featured Products</Typography>
-        </Box>
+        <Box mt={5} textAlign="center">
+        <Typography variant="h1" sx={{ ...themeStyles.mainHeading, fontSize: !isMobile ? '42px' : '32px' }}>Featured Products</Typography>
+      </Box>
         <Box>
           <Slider key={isMobile ? "mobile" : "desktop"} {...settings}>
             <ProductCardVertical productImg={featureimg1} isMobile={isMobile} />

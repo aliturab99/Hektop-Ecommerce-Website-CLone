@@ -10,8 +10,9 @@ function Home() {
     <>
       {/* <InfoSlider /> */}
       <Container maxWidth={"md"} disableGutters>
-          <FeaturedProducts />
-          <LatestProducts />
+          {/* <FeaturedProducts /> */}
+          {/* <LatestProducts /> */}
+          
       </Container>
     </>
   )

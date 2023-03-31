@@ -5,6 +5,7 @@ import FeaturedProducts from './FeaturedProducts';
 import InfoSlider from './InfoSlider';
 import LatestProducts from './LatestProducts';
 import OffersList from './OffersList';
+import UniqueFeatures from './UniqueFeatures';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
           {/* <FeaturedProducts /> */}
           {/* <LatestProducts /> */}
           {/* <OffersList /> */}
+          <UniqueFeatures />
       </Container>
     </>
   )

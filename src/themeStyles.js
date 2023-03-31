@@ -58,7 +58,7 @@ export const themeStyles = {
         fontFamily: 'var(--josefin)',
         fontSize: "42px",
         lineHeight: "49px",
-        color: "var(--haeding-color)",
+        color: "var(--heading-color)",
         fontWeight: 700
     },
     productTitle: {

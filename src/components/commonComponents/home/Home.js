@@ -13,7 +13,7 @@ function Home() {
       <Container maxWidth={"md"} disableGutters>
           {/* <FeaturedProducts /> */}
           {/* <LatestProducts /> */}
-          <OffersList />
+          {/* <OffersList /> */}
       </Container>
     </>
   )

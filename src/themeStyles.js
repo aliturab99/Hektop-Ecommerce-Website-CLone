@@ -100,5 +100,60 @@ export const themeStyles = {
       fontSize: '14px',
       lineHeight: '17px',
       color: '#151875',
+    },
+    discountItemHeading: {
+      fontFamily: 'Josefin Sans',
+      fontSize: "30px",
+      lineHeight: "132%",
+      letterSpacing: "0.015em",
+      color: "var(--off-blue)",
+      margin: "10px 0 ",
+      fontWeight: "bold"
+    },
+    discountedItemSubHeading: {
+      fontFamily: 'Josefin Sans',
+      fontSize: "21px",
+      lineHeight: "30px",
+      letterSpacing: "0.015em",
+      color: "var(--pink)",
+      margin: "10px 0 ",
+    },
+    discountedItemDescription: {
+      fontFamily: 'Lato',
+      fontStyle: "normal",
+      fontHeight: 400,
+      fontSize: "16px",
+      lineHeight: "30px",
+      letterSpacing: "0.02em",
+      color: "var(--light-gray)",
+    },
+    discountedItemDescriptionPoints: {
+      fontFamily: 'Lato',
+      fontStyle: "normal",
+      fontHeight: 400,
+      fontSize: "15px",
+      lineHeight: "30px",
+      letterSpacing: "0.02em",
+      color: "var(--light-gray)",
+    },
+    Btn: {
+        borderRadius: 0,
+        color: "var(--white)",
+        padding: "15px 48px",
+        marginTop: "20px",
+        backgroundColor: 'var(--pink)',
+        '&:hover': {
+          backgroundColor: 'var(--pink)',
+        },
+        '&:focus': {
+          backgroundColor: 'var(--pink)',
+        },
+    },
+    btnText: {
+      fontFamily: 'var(--josefin)',
+      fontSize: '17px',
+      lineHeight: '20px',
+      letterSpacing: '0.02em',
+      color: '#FFFFFF',
     }
 }

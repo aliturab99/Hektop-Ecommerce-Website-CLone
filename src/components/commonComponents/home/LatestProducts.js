@@ -28,9 +28,10 @@ function LatestProducts() {
                         value={value}
                         onChange={handleChange}
                         aria-label="basic tabs example"
-                        textColor="pink"
                         indicatorColor="secondary"
-                        centered
+                        variant="scrollable"
+                        scrollButtons="auto"
+                        allowScrollButtonsMobile
 
                         sx={{
                             '& .Mui-selected': {

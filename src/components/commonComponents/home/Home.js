@@ -1,6 +1,7 @@
 import { Container } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react'
+import DiscountItem from './DiscountItem';
 import FeaturedProducts from './FeaturedProducts';
 import InfoSlider from './InfoSlider';
 import LatestProducts from './LatestProducts';
@@ -18,7 +19,10 @@ function Home() {
       </Container>
       <Box mt={5} display="flex" justifyContent='center' sx={{ 'backgroundColor': 'var(--light-purple)' }}>
           <UniqueFeatures />
-            </Box>
+      </Box>
+      <Container maxWidth={"md"} disableGutters>
+        <DiscountItem />
+      </Container>
     </>
   )
 }

@@ -56,7 +56,7 @@ function Header() {
             {/* top bar started */}
             <Box fontFamily={"var(--josefin)"} >
                 <Grid container sx={{ ...themeStyles.topBar }} >
-                    <Grid md={1}></Grid>
+                    <Grid item md={1} xs={0}></Grid>
                     <Grid item md={5} xs={12} alignItems={"center"} display={"flex"} justifyContent={"space-evenly"} >
                         <Box>
                             <Typography className='text' variant='body1'><MailOutlineIcon sx={{ verticalAlign: "middle", marginRight: "10px" }} />syedyawaraliturab@gmail.com</Typography>

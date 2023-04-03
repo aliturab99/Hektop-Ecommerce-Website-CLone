@@ -6,6 +6,8 @@ import FeaturedProducts from './FeaturedProducts';
 import InfoSlider from './InfoSlider';
 import LatestProducts from './LatestProducts';
 import OffersList from './OffersList';
+import TopCategories from './TopCategories';
+import TrendingProducts from './TrendingProducts';
 import UniqueFeatures from './UniqueFeatures';
 
 function Home() {
@@ -16,12 +18,14 @@ function Home() {
           <FeaturedProducts />
           <LatestProducts />
           <OffersList />
+          <TrendingProducts />
       </Container>
       <Box mt={5} display="flex" justifyContent='center' sx={{ 'backgroundColor': 'var(--light-purple)' }}>
           <UniqueFeatures />
       </Box>
       <Container maxWidth={"md"} disableGutters>
         <DiscountItem />
+        <TopCategories />
       </Container>
     </>
   )

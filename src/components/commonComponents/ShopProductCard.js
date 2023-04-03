@@ -6,16 +6,15 @@ import { Box, Grid, Paper, Typography, Button } from '@mui/material';
 
 
 function ShopProductCard({
-  productImg,
   isMobile,
   columnNumber,
   paperStyle,
-  imgHoverStyle,
-  iconHoverStyle,
+  imageHoverStyle,
+  iconsHoverStyle,
   paperHoverStyle,
   saleTagHoverStyle,
-  imgBoxStyle,
-  imgStyle,
+  imageBoxStyle,
+  imageStyle,
   saleTagStyle,
   saleBoxStyle,
   iconsStyle,
@@ -26,7 +25,9 @@ function ShopProductCard({
   title,
   price,
   discount,
-  saleText
+  saleText,
+  productImage,
+  imageBoxContent
 }) {
 
   
@@ -38,11 +39,11 @@ function ShopProductCard({
         borderTopRightRadius: '5px', borderTopLeftRadius: '5px',
         '&:hover .imageBox': {
           backgroundColor: 'var(--white)',
-          ...imgHoverStyle,
+          ...imageHoverStyle,
         },
         '&:hover .iconsContainer': {
           visibility: 'visible',
-          ...iconHoverStyle
+          ...iconsHoverStyle
         },
         ':hover': {
           border: '2px solid #F701A8',
@@ -61,15 +62,15 @@ function ShopProductCard({
             height: '236px',
             backgroundColor: 'var(--product-background-hover)',
             position: 'relative',
-            ...imgBoxStyle
+            ...imageBoxStyle
         }}>
             <img
             style={{
               maxWidth: '100%',
               height: 'auto',
-              ...imgStyle,
+              ...imageStyle,
             }}
-            src={productImg} />
+            src={productImage} />
               {/* Top Left Sale Tag */}
               <Box className="saleTagBox" sx={{ visibility: 'hidden', ...saleBoxStyle }}>
                     <span className="saleTag" style={{
@@ -104,13 +105,17 @@ function ShopProductCard({
               <FavoriteBorderIcon className="productHoverIcons" sx={{ padding: '10px', color: '#2F1AC4', '&:hover': {  backgroundColor: '#EEEFFB', borderRadius: '50%', boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.05)' } }} />
               <ZoomInIcon className="productHoverIcons"  sx={{ padding: '10px', color: '#2F1AC4', '&:hover': {  backgroundColor: '#EEEFFB', borderRadius: '50%', boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.05)' } }}/>
             </Box>
-
+          {imageBoxContent}
         </Box>
         <Box display="flex" alignItems="baseline" pt={3} px={1} justifyContent='space-between' className="detailsBox" paddingBottom={1} sx={{...detailsBoxStyle}}>
                 <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", ...titleStyle }}>{title}</Typography>
-                <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', ...priceStyle}}>{price}</Typography>
-                <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', textDecorationLine: 'line-through', color: 'var(--pink)', fontSize: '12px', lineHeight: '14px', ...discountStyle}}>{discount}</Typography>
+               
+                <Box display="flex" alignItems="baseline" flexDirection="row" justifyContent="space-between">
+                    <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', marginRight: '20px', ...priceStyle}}>{price}</Typography>
+                    <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', textDecorationLine: 'line-through', color: 'var(--pink)', fontSize: '12px', lineHeight: '14px', ...discountStyle}}>{discount}</Typography>
+                </Box>
             </Box>
+            
       </Paper>
     </Box>
     </Grid>

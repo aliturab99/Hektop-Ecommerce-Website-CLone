@@ -155,5 +155,33 @@ export const themeStyles = {
       lineHeight: '20px',
       letterSpacing: '0.02em',
       color: '#FFFFFF',
-    }
+    },
+    latestBlogsHeading: {
+      fontFamily: 'Josefin Sans',
+      fontSize: '18px',
+      color: '#151875',
+      fontStyle: "600",
+      margin: "20px 0"
+    },
+    latestBlogDescription: {
+      fontFamily: 'Lato',
+      fontStyle: 'normal',
+      fontHeight: 400,
+      fontSize: '16px',
+    },
+    latestBlogAuthor: {
+      fontFamily: 'Josefin Sans',
+      fontSize: '14px',
+      lineHeight: '16px',
+      color: '#151875',
+    },
+    latestBlogButton: {
+      fontFamily: 'Lato',
+  fontStyle: 'normal',
+  fontWeight: '400',
+  fontSize: '16px',
+  lineHeight: '30px',
+  textDecoration:' underline',
+  marginBottom: "20px"
+}
 }

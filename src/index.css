@@ -48,3 +48,6 @@
   overflow:hidden;
   transform: rotate(45deg);
 }
+.MuiCard-root:hover {
+  background-color: "brown";
+}

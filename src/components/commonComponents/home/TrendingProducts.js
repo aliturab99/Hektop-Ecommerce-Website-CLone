@@ -11,7 +11,7 @@ import discountProduct2 from '../../../static/images/trendingProducts/discountPr
 import discountProduct3 from '../../../static/images/trendingProducts/discountProduct3.png';
 import discountProduct4 from '../../../static/images/trendingProducts/discountProduct4.png';
 import discountProduct5 from '../../../static/images/trendingProducts/discountProduct5.png';
-import { Link } from "react-router-dom";
+  import { Link } from "react-router-dom";
 
 
 

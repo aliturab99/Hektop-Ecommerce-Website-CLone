@@ -14,19 +14,19 @@ import UniqueFeatures from './UniqueFeatures';
 function Home() {
   return (
     <>
-      {/* <InfoSlider /> */}
+      <InfoSlider />
       <Container maxWidth={"md"} disableGutters>
-          {/* <FeaturedProducts />
+          <FeaturedProducts />
           <LatestProducts />
           <OffersList />
-          <TrendingProducts /> */}
+          <TrendingProducts />
       </Container>
       <Box mt={5} display="flex" justifyContent='center' sx={{ 'backgroundColor': 'var(--light-purple)' }}>
-          {/* <UniqueFeatures /> */}
+          <UniqueFeatures />
       </Box>
       <Container maxWidth={"md"} disableGutters>
-        {/* <DiscountItem /> */}
-        {/* <TopCategories /> */}
+        <DiscountItem />
+        <TopCategories />
         <LatestBlogs />
       </Container>
     </>

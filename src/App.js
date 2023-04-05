@@ -11,12 +11,9 @@ function App() {
     <div>
       <Header />
       <AppRoutes />
-      <Box  sx={{backgroundColor: '#F4F6F8',
-        padding: '40px 20px'}}>
-      <Container maxWidth={"md"} disableGutters>
-       <Footer />
-      </Container>
-      </Box>
+      
+          <Footer />
+
     </div>
   );
 }

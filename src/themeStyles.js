@@ -183,5 +183,17 @@ export const themeStyles = {
   lineHeight: '30px',
   textDecoration:' underline',
   marginBottom: "20px"
+},
+footerCopyRightText: {
+  fontFamily: 'Lato',
+  fontStyle: "normal",
+  fontHeight: 600,
+  fontSize: "16px",
+  lineHeight: "19px",
+  color: "#9DA0AE",
+},
+footerSocialIcon: {
+  color: "var(--off-blue)",
+  margin: "0 5px"
 }
 }

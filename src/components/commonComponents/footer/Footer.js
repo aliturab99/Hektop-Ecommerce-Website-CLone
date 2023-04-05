@@ -8,77 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 
-const useStyles = makeStyles((theme) => ({
 
-
-
-    logo: {
-        fontFamily: 'Josefin Sans',
-        fontSize: '38px !important',
-        lineHeight: '45px',
-        color: '#000000',
-        marginBottom: '20px',
-        fontWeight: "700 !important",
-        marginBottom: "20px !important"
-    },
-    input: {
-        background: '#FFFFFF',
-        borderRadius: '3px',
-        marginRight: '10px',
-    },
-    button: {
-        backgroundColor: 'var(--pink) !important',
-        borderRadius: '3px',
-        '&:hover': {
-            background: 'var(--pink)',
-        },
-    },
-    buttonText: {
-        fontFamily: 'Roboto',
-        fontStyle: 'normal',
-        fontWeight: 500,
-        fontSize: '16px',
-        lineHeight: '19px',
-        color: '#EEEFFB',
-    },
-    address: {
-        fontFamily: 'Lato',
-        fontStyle: 'normal',
-        fontWeight: 400,
-        fontSize: '16px',
-        lineHeight: '19px',
-        color: '#8A8FB9',
-    },
-    section: {
-        marginBottom: '20px',
-    },
-    heading: {
-        fontFamily: 'Josefin Sans',
-        fontSize: '22px !important',
-        lineHeight: '26px',
-        color: '#000000',
-        marginBottom: '10px',
-        fontWeight: "700 !important",
-        marginBottom: "20px !important"
-    },
-    links: {
-        display: 'flex',
-        flexDirection: 'column',
-    },
-    link: {
-        fontFamily: 'Lato',
-        fontStyle: 'normal',
-        fontWeight: 400,
-        fontSize: '14px',
-        lineHeight: '35px',
-        color: '#8A8FB9',
-        marginBottom: '5px',
-        textDecoration: 'none',
-        '&:hover': {
-            color: '#FB2E86',
-        },
-    },
-}));
 
 
 function Footer() {
@@ -86,7 +16,6 @@ function Footer() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    const classes = useStyles();
     return (
         <>
             <Box sx={{
@@ -94,16 +23,16 @@ function Footer() {
                 padding: '40px 20px 0 20px', margin: "20px 0 0 0"
             }}>
                 <Container maxWidth={"md"} disableGutters>
-                    <Grid container className={classes.root} justifyContent={isMobile ? "center" : "start"} >
+                    <Grid container justifyContent={isMobile ? "center" : "start"} >
                         <Grid item md={5} marginBottom={isMobile ? 5 : 0} textAlign={isMobile ? "center" : "start"}>
-                            <Typography variant="h1" className={classes.logo}>
+                            <Typography variant="h1" sx={{...themeStyles.footerLogo}}>
                                 Hekto
                             </Typography>
 
                             <FormControl sx={{ margin: "5px 0", width: isMobile ? '100%' : '80%' }} variant="outlined">
                                 <OutlinedInput
-                                    className={classes.input}
                                     sx={{
+                                        ...themeStyles.footerInput,
                                         paddingRight: "0",
                                         "& fieldset": {
                                             border: "none !important",
@@ -113,8 +42,8 @@ function Footer() {
                                     id="outlined-adornment-password"
                                     endAdornment={
                                         <InputAdornment position="end">
-                                            <Button disableElevation variant="contained" className={classes.button}>
-                                                <Typography className={classes.buttonText}>Subscribe</Typography>
+                                            <Button disableElevation variant="contained" sx={{...themeStyles.footerButton}}>
+                                                <Typography sx={{...themeStyles.footerButtonText}}>Subscribe</Typography>
                                             </Button>
                                         </InputAdornment>
                                     }
@@ -123,66 +52,66 @@ function Footer() {
                                     fullWidth={isMobile ? true : false}
                                 />
                             </FormControl>
-                            <Typography className={classes.address}>
+                            <Typography sx={{...themeStyles.footerAddress}}>
                                 123 Main Street, New York, NY 10001
                             </Typography>
                         </Grid>
                         <Grid container item md={7} justifyContent={isMobile ? "center" : "start"} spacing={2}>
-                            <Grid item xs={6} sm={6} md={4} className={classes.section}>
-                                <Typography variant="h2" className={classes.heading}>
+                            <Grid item xs={6} sm={6} md={4} sx={{...themeStyles.footerSection}}>
+                                <Typography variant="h2" sx={{...themeStyles.footerHeading}}>
                                     Categories
                                 </Typography>
-                                <div className={classes.links}>
-                                    <Link to="/" className={classes.link}>
+                                <div style={{...themeStyles.footerLinks}}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Laptops & Computers
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Cameras & Photography
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Smart Phones & Tablets
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Video Games & Consoles
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Waterproof Headphones
                                     </Link>
                                 </div>
                             </Grid>
-                            <Grid item xs={6} sm={6} md={4} className={classes.section}>
-                                <Typography variant="h2" className={classes.heading}>
+                            <Grid item xs={6} sm={6} md={4} sx={{...themeStyles.footerSection}}>
+                                <Typography variant="h2" sx={{...themeStyles.footerHeading}}>
                                     Customer Care
                                 </Typography>
-                                <div className={classes.links}>
-                                    <Link to="/" className={classes.link}>
+                                <div style={{...themeStyles.footerLinks}}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         My Account                        </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Discount                        </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Returns                        </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Orders History                        </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Order Tracking                        </Link>
                                 </div>
                             </Grid>
-                            <Grid item xs={6} sm={6} md={4} display={isMobile ? "none" : "block"} className={classes.section}>
-                                <Typography variant="h2" className={classes.heading}>
+                            <Grid item xs={6} sm={6} md={4} display={isMobile ? "none" : "block"} sx={{...themeStyles.footerSection}}>
+                                <Typography variant="h2" sx={{...themeStyles.footerHeading}}>
                                     Pages
                                 </Typography>
-                                <div className={classes.links}>
-                                    <Link to="/" className={classes.link}>
+                                <div style={{...themeStyles.footerLinks}}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Blog
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Browse the Shop</Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Category
                                     </Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Pre-Built Pages</Link>
-                                    <Link to="/" className={classes.link}>
+                                    <Link to="/" style={{...themeStyles.footerLink}}>
                                         Visual Composer Elements
                                     </Link>
 

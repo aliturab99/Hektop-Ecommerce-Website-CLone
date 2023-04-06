@@ -51,7 +51,7 @@ function LatestProducts() {
                 <div role="tabpanel" hidden={value !== 0} aria-labelledby={`simple-tab-${0}`} >
                     <Grid container columnSpacing={3}>
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -75,7 +75,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -99,7 +99,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -126,7 +126,7 @@ function LatestProducts() {
                 <div role="tabpanel" hidden={value !== 1} aria-labelledby={`simple-tab-${1}`} >
                 <Grid container columnSpacing={3}>
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -150,7 +150,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -174,7 +174,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -201,7 +201,7 @@ function LatestProducts() {
                 <div role="tabpanel" hidden={value !== 2} aria-labelledby={`simple-tab-${2}`}>
                 <Grid container columnSpacing={3}>
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -225,7 +225,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}
@@ -249,7 +249,7 @@ function LatestProducts() {
                         />
                     
                         <ShopProductCard
-                            productImg={latestProduct1}
+                            productImage={latestProduct1}
                             title={"RevolvingChair"}
                             price={"$42.00"}
                             discount={"$65.00"}

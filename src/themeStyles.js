@@ -263,4 +263,14 @@ footerLink: {
       color: '#FB2E86',
   },
 },
+productListProductTitle: {
+  fontFamily: 'Josefin Sans',
+  fontStyle: 'normal',
+  fontHeight: 700,
+  fontSize: '18px',
+  lineHeight: '18px',
+  textAlign: 'center',
+  color: '#151875',
+  fontWeight: "bold"
+}
 }

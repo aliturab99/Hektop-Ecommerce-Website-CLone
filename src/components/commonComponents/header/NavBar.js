@@ -35,7 +35,7 @@ const data = [
     {
         id: 'products',
         label: 'Products',
-        to: "/test",
+        to: "/products",
         options: null,
         anchorEl: null,
         open: false

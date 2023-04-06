@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/commonComponents/header/Header';
 import Home from './components/commonComponents/home/Home';
+import ProductsList from './components/products/ProductsList';
 import Login from './pages/Login';
 
 function AppRoutes () {
@@ -13,7 +14,11 @@ function AppRoutes () {
         {
             path: '/ENGLISH',
             element: Login,
-          }
+        },
+        {
+            path: '/products',
+            element: ProductsList,
+        }
     ];
 
     return (

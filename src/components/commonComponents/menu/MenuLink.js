@@ -66,7 +66,7 @@ function MenuLink({ data, styleObj,menuStyle }) {
                         sx={{ ...themeStyles.btnMenu }}
                         key={dropdown.id}
                     >
-                        <NavLink style={{ ...themeStyles.btnMenu, ...styleObj, display: { xs: 'block', md: 'flex'}}}
+                        <NavLink to={dropdown.to} style={{ ...themeStyles.btnMenu, ...styleObj, display: { xs: 'block', md: 'flex'}}}
                             
                         >
                             {dropdown.label}

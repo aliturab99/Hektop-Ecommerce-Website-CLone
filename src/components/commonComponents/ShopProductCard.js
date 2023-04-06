@@ -27,14 +27,17 @@ function ShopProductCard({
   discount,
   saleText,
   productImage,
-  imageBoxContent
+  imageBoxContent,
+  PaperElevation,
+  priceBoxStyle,
+  priceTextMargin
 }) {
 
   
   return (
     <Grid item md={columnNumber || 4} xs={12}>
       <Box m={!isMobile ? 1 : 2}>
-      <Paper square elevation={3} sx={{
+      <Paper square elevation={ PaperElevation || 3 } sx={{
         ...paperStyle,
         borderTopRightRadius: '5px', borderTopLeftRadius: '5px',
         '&:hover .imageBox': {
@@ -110,9 +113,9 @@ function ShopProductCard({
         <Box display="flex" alignItems="baseline" pt={3} px={1} justifyContent='space-between' className="detailsBox" paddingBottom={1} sx={{...detailsBoxStyle}}>
                 <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", ...titleStyle }}>{title}</Typography>
                
-                <Box display="flex" alignItems="baseline" flexDirection="row" justifyContent="space-between">
+                <Box display="flex" alignItems="baseline" sx={{...priceBoxStyle}} flexDirection="row" justifyContent="space-between">
                     <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', marginRight: '20px', ...priceStyle}}>{price}</Typography>
-                    <Typography className="productOtherDetails" sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', textDecorationLine: 'line-through', color: 'var(--pink)', fontSize: '12px', lineHeight: '14px', ...discountStyle}}>{discount}</Typography>
+                    <Typography className="productOtherDetails" mt={ priceTextMargin || 0 } sx={{...themeStyles.productPrice, fontFamily: 'var(--josefin)', textDecorationLine: 'line-through', color: 'var(--pink)', fontSize: '12px', lineHeight: '14px', ...discountStyle}}>{discount}</Typography>
                 </Box>
             </Box>
             

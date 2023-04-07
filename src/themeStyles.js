@@ -272,5 +272,97 @@ productListProductTitle: {
   textAlign: 'center',
   color: '#151875',
   fontWeight: "bold"
-}
+},
+breaCrumbsHeading: {
+  "fontFamily": 'var(--josefin)',
+  "fontSize": {xs : "28px" , md : '36px'},
+  "lineHeight": "42px",
+  "color": "#101750",
+  "fontWeight": "600",
+  
+},
+breaCrumbsLink: {
+  "my": 2,
+  "color": 'var(--pink)',
+  "display": 'block',
+  'fontSize': '16px',
+  "fontFamily": "var(--lato)",
+  'fontWeight': '500',
+  'textDecoration': 'none',
+},
+breadcrumbsBox : {
+  "padding" : { md : "72px" } ,
+  "paddingTop" : {xs : "40px"},
+  "paddingBottom" : { xs :"40px"}
+},
+
+// horizontal filters
+filterResults: {
+  color: "var(--soft-blue)",
+  fontStyle: "normal",
+  fontWeight: "400",
+  fontSize: "12px",
+  lineHeight: "14px",
+  textAlign: "center",
+},
+filterPerPageContainer: {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: { xs: "space-around", md: "space-between" },
+},
+filterPerPageText: {
+  color: "var(--off-blue-blue)",
+  fontStyle: "normal",
+  fontWeight: "400",
+  fontSize: "16px",
+  lineHeight: "19px",
+},
+filterSortText: {
+  color: "var(--off-blue-blue)",
+  fontStyle: "normal",
+  fontWeight: "400",
+  fontSize: "16px",
+  lineHeight: "19px",
+},
+filterSearchInputContainer: {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: { xs: "center" },
+  marginTop: { xs: "20px", md: "0" },
+},
+filterViewText: {
+  color: "var(--off-blue)",
+  fontStyle: "normal",
+  fontWeight: "400",
+  fontSize: "16px",
+  lineHeight: "19px",
+  marginRight: "10px",
+},
+filterWindowIcon: {
+  color: "var(--off-blue)",
+  fontSize: "20px",
+  marginRight: "5px",
+},
+filterSearchInput: {
+  marginLeft: "20px",
+  padding: "0",
+  borderWidth: "1px",
+  borderRadius: 0,
+  borderColor: "#E7E6EF",
+  "& input": {
+    padding: "6px 14px",
+    borderColor: "var(--off-blue)",
+  },
+  ".MuiOutlinedInput-notchedOutline": {
+    borderColor: "#E7E6EF",
+  },
+  "&:hover .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#E7E6EF",
+  },
+  "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+    borderColor: "#E7E6EF !important",
+    borderWidth: "1px",
+  },
+},
+// horizontal filters
 }

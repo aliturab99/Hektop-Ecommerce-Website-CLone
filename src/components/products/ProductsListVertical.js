@@ -28,9 +28,9 @@ function ProductsListVertical() {
 
     return (
         <div>
-            <Grid container columnSpacing={1}>
+            <Grid container columnSpacing={1} mb={5}>
                 <ShopProductCard
-                    productImage={shopProduct3}
+                    productImage={shopProduct1}
                     title={"RevolvingChair"}
                     price={"$42.00"}
                     discount={"$65.00"}
@@ -56,7 +56,7 @@ function ProductsListVertical() {
 
                 />
                 <ShopProductCard
-                    productImage={shopProduct3}
+                    productImage={shopProduct2}
                     title={"RevolvingChair"}
                     price={"$42.00"}
                     discount={"$65.00"}
@@ -106,7 +106,7 @@ function ProductsListVertical() {
                     priceBoxStyle ={ { marginTop: "20px" } }
                     />
                 <ShopProductCard
-                    productImage={shopProduct3}
+                    productImage={shopProduct4}
                     title={"RevolvingChair"}
                     price={"$42.00"}
                     discount={"$65.00"}
@@ -131,6 +131,7 @@ function ProductsListVertical() {
                     priceBoxStyle ={ { marginTop: "20px" } }
 
                 />
+                
             </Grid>
         </div>
     )

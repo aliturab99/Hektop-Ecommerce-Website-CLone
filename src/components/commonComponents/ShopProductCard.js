@@ -70,7 +70,7 @@ function ShopProductCard({
             <img
             style={{
               maxWidth: '100%',
-              height: 'auto',
+              height: isMobile ? "90%" :'auto',
               ...imageStyle,
             }}
             src={productImage} />

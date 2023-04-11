@@ -365,4 +365,86 @@ filterSearchInput: {
   },
 },
 // horizontal filters
+
+
+//horizontal Product Lists
+
+horizontalProductsListTitle : {
+  fontFamily: 'Josefin Sans',
+  fontSize: '18px',
+  lineHeight: '21px',
+  color: '#111C85',
+  fontWeight: "bold"
+},
+horizontalproductsListContainer : {
+  padding: "7px",
+  boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.1)',
+},
+horizontalProductsListPrice: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  color: '#111C85',
+  marginRight: '10px'
+},
+horizontalProductsListDiscountedPrice: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  textDecoration: 'line-through',
+  color: "#FF2AAA",
+},
+horizontalProductsListDescription : {
+  fontFamily: 'Lato',
+  fontStyle: 'normal',
+  fontHeight: '400',
+  fontSize: '16px',
+  lineHeight: '28px',
+  color: '#9295AA',
+},
+horizontalProductsListButtons: {
+  background: "#fff",
+  color: "var(--off-blue)",
+  boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.1)',
+  margin: "0 5px"
+},
+horizontalProductsListIcons : {
+  fontSize: "17px",
+},
+horizontalProductsListDetailArea: {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly"
+},
+
+//horizontal Product Lists
+
+
+
+//Products Multi Filters
+
+
+productMultiFilterHeading: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '20px',
+  lineHeight: '30px',
+  textAlign: 'center',
+  color: '#151875',
+  fontWeight: "bold",
+  textAlign: "start",
+  textDecoration: 'underline',
+  textDecorationColor: '#000',
+  textDecorationThickness: '1px',
+},
+productMultiFilterOptions: {
+  fontFamily: 'Lato',
+  fontStyle: 'normal',
+  fontHeight: 400,
+  fontSize: '16px',
+  lineHeight: '30px',
+  color: '#7E81A2',
+}
+
+
+//Products Multi Filters
 }

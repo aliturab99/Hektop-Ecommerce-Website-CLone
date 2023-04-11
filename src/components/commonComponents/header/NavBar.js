@@ -181,7 +181,7 @@ function NavBar() {
                             InputProps={{
                                 style: {
                                     borderRadius: 0,
-                                    border: "2px solid var(--gray)"
+                                    border: "transparent"
                                 },
                             }}
                             sx={{...themeStyles.headerSearchInput}}

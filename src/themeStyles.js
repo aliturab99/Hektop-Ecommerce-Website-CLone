@@ -443,8 +443,140 @@ productMultiFilterOptions: {
   fontSize: '16px',
   lineHeight: '30px',
   color: '#7E81A2',
-}
-
+},
 
 //Products Multi Filters
-}
+
+//checkout
+checkoutInput: {
+  '&::placeholder': { color: "#C1C8E1" },
+  '& .MuiInput-underline::before': {
+    borderBottom: '1px solid #C1C8E1 !important'
+  },
+  '&:hover .MuiInput-underline::before': {
+    borderBottom: '1px solid #C1C8E1'
+  },
+  '& .MuiInput-underline::after': {
+    borderBottom: '1px solid #C1C8E1'
+  },
+},
+
+checkoutProductsTitle: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  color: '#000000',
+},
+checkoutProductsDetails: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  color: '#A1A8C1',
+},
+
+
+
+// Product description Details Tabs Styling is Started
+productDescriptionContainer:{
+  background: "var(--product-description-background)"
+},
+prductDescriptionTabsTitle: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '18px',
+  lineHeight: '28px',
+  textDecorationzine: 'underline',
+  color: '#151875',
+  fontWeight: "bold",
+  textTransform: "capitalize",
+
+},
+prductDescriptionHeading:{
+  fontFamily: 'Josefin Sans',
+  fontSize: '22px',
+  lineHeight: '26px',
+  color: '#151875',
+  fontWeight: "bold"
+},
+productDescriptionText: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '16px',
+  lineHeight: '29px',
+  color: '#A9ACC6',
+  display: 'flex',
+  alignItems: "center"
+},
+productDescriptionPoints:{
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '29px',
+  color: '#A9ACC6',
+  display: 'flex',
+  alignItems: "center",
+  '&:hover .MuiSvgIcon-root' : {
+    color: "blue"
+  }
+},
+productDescriptionPointIcon:{
+  color: "black",
+  fontSize: '20px',
+},
+relatedProductHeading:{
+  fontFamily: 'Josefin Sans',
+  fontSize: '36px',
+  lineHeight: '42px',
+  color: '#101750',
+  fontWeight: "bold",
+},
+
+// product detain style code is starting from here
+ //product details page
+ productDetailsPrice: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  color: '#111C85',
+  marginRight: '10px'
+},
+productDetailsDiscountedPrice: {
+  fontFamily: 'Josefin Sans',
+  fontSize: '14px',
+  lineHeight: '16px',
+  textDecoration: 'line-through',
+  color: "#FF2AAA",
+  marginBottom: '20px'
+},
+productDetailsDescription: {
+  fontFamily: 'Lato',
+  fontStyle: 'normal',
+  fontHeight: '400',
+  fontSize: '16px',
+  lineHeight: '28px',
+  color: '#9295AA',
+  marginBottom: '20px'
+},
+productDetailsAddToCartButton: {
+  backgroundColor: 'var(--pink) !important',
+  borderRadius: '0',
+  boxShadow: '0',
+  '&:hover': {
+      background: 'var(--pink)',
+      boxShadow: '0'
+  }
+},
+productDetailsSubTitle: {
+  fontFamily: 'var(--josefin)',
+  fontSize: '18px',
+  lineHeight: '21px',
+  fontWeight: "bold",
+  color: "#0D134E"
+},
+productDetailsTotalRating: {
+  fontFamily: "var(--josefin)",
+  fontSize: "14px",
+  lineHeight: "29px",
+  textTransform: "capitalize",
+  color: '#151875',
+  marginLeft: '5px',
+  marginBottom: '20px'
+},
+} 

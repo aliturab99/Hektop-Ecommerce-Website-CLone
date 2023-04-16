@@ -32,7 +32,6 @@ function BlogCardVertical() {
                 color: "var(--pink)"
             }
         }}>
-                <CardActionArea>
                     <CardMedia
                         sx={{
                             height: '255px',
@@ -67,7 +66,6 @@ function BlogCardVertical() {
                         Read More
                     </Button>
                 </CardActions>
-                </CardActionArea>
             </Card>
         </Grid>
     )

@@ -1,54 +1,53 @@
 import {
-    Box,
-    Card,
-    CardContent,
-    Grid,
-    Paper,
-    Rating,
-    Typography,
-    useTheme,
-    useMediaQuery,
-  } from "@mui/material";
-  import React, { useState } from "react";
-  import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-  import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-  import { Button } from "@mui/material";
-  
-  import thumb1 from "../../static/images/products/thumb1.png";
-  import thumb2 from "../../static/images/products/thumb2.png";
-  import thumb3 from "../../static/images/products/thumb3.png";
-  import { Container } from "@mui/system";
-  import { themeStyles } from "../../themeStyles";
-  import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-  
-  import FacebookIcon from "@mui/icons-material/Facebook";
-  import InstagramIcon from "@mui/icons-material/Instagram";
-  import TwitterIcon from "@mui/icons-material/Twitter";
-  
-  export default function ProductDetails() {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  
-    const images = [
-      { title: "image 1", url: thumb1 },
-      { title: "image 2", url: thumb2 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-      { title: "image 3", url: thumb3 },
-    ];
-  
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-    const handleClickThumbnail = (index) => {
-      setCurrentImageIndex(index);
-    };
-  
-    return (
+  Box,
+  Grid,
+  Rating,
+  Typography,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
+import React, { useState } from "react";
+import { Button } from "@mui/material";
+
+import thumb1 from "../../static/images/products/thumb1.png";
+import thumb2 from "../../static/images/products/thumb2.png";
+import thumb3 from "../../static/images/products/thumb3.png";
+import { Container } from "@mui/system";
+import { themeStyles } from "../../themeStyles";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import ProductsDetailTabs from "./ProductsDetailTabs";
+import RelatedProducts from "./RelatedProducts";
+
+export default function ProductDetails() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+
+  const images = [
+    { title: "image 1", url: thumb1 },
+    { title: "image 2", url: thumb2 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+    { title: "image 3", url: thumb3 },
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleClickThumbnail = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  return (
+    <>
       <Container
         maxWidth="md"
         sx={{
@@ -182,5 +181,24 @@ import {
           </Grid>
         </Grid>
       </Container>
-    );
-  }
+
+      {/* Detail Description */}
+
+      <Box
+        paddingY={9}
+        sx={{
+          ...themeStyles.productDescriptionContainer,
+        }}
+      >
+        <ProductsDetailTabs />
+      </Box>
+
+      <Box
+        paddingY={9}
+      >
+        <RelatedProducts />
+      </Box>
+
+    </>
+  );
+}

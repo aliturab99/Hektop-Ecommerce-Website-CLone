@@ -3,7 +3,6 @@ import { Box } from '@mui/system';
 import React from 'react';
 import { themeStyles } from '../../themeStyles';
 import SearchIcon from '@mui/icons-material/Search';
-import ColorFilter from './ColorFilter';
 import { useState } from 'react';
 
 function ProductMultiFilters({ filterData, handleFilters, selectedOption  }) {

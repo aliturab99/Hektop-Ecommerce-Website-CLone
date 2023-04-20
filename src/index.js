@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import {theme} from './themeStyles'
+import configureAxious from './config/configureAxious';
+
+configureAxious()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

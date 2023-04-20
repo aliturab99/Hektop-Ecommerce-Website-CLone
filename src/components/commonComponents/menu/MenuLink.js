@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { BrowserRouter, NavLink } from "react-router-dom";
 
-function MenuLink({ data, styleObj,menuStyle }) {
+function MenuLink({ data, styleObject,menuStyle }) {
 
     const [dropdowns, setDropdowns] = useState(data || []);
 
@@ -38,7 +38,7 @@ function MenuLink({ data, styleObj,menuStyle }) {
                             aria-haspopup="true"
                             aria-expanded={dropdown.open ? 'true' : undefined}
                             onClick={(event) => handleClick(index, event)}
-                            sx={{ ...themeStyles.btnMenu, ...styleObj }}
+                            sx={{ ...themeStyles.btnMenu, ...styleObject }}
                             endIcon={<KeyboardArrowDownIcon style={{ ...themeStyles.btnMenuIcon }} />}
                         >
                             {dropdown.label}
@@ -56,7 +56,7 @@ function MenuLink({ data, styleObj,menuStyle }) {
                         >
                             {dropdown.options.map((option, index) => (
                                 <MenuItem key={index} onClick={() => handleClose(index)}>
-                                    <NavLink  to={option.to} style={{ ...themeStyles.menuLink, ...styleObj }}>{option.option}</NavLink>
+                                    <NavLink  to={option.to} style={{ ...themeStyles.menuLink, ...styleObject }}>{option.option}</NavLink>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -66,7 +66,7 @@ function MenuLink({ data, styleObj,menuStyle }) {
                         sx={{ ...themeStyles.btnMenu }}
                         key={dropdown.id}
                     >
-                        <NavLink to={dropdown.to} style={{ ...themeStyles.btnMenu, ...styleObj, display: { xs: 'block', md: 'flex'}}}
+                        <NavLink to={dropdown.to} style={{ ...themeStyles.btnMenu, ...styleObject, display: { xs: 'block', md: 'flex'}}}
                             
                         >
                             {dropdown.label}

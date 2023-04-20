@@ -14,6 +14,7 @@ import MenuLink from '../menu/MenuLink';
 import { Grid, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { themeStyles } from '../../../themeStyles';
+import { Link } from 'react-router-dom';
 
 
 const data = [
@@ -87,115 +88,112 @@ function NavBar() {
     };
 
     return (
-            <AppBar sx={{ background: "var(--bg-color)" }} position="static">
-                <Grid container sx={{justifyContent: "left", alignItems:"center"}}>
-                    <Grid item md={1}></Grid>
-                    <Grid item md={2}>
-                    <Toolbar disableGutters>
-                        <Typography
-                                variant="h6"
-                                noWrap
-                                component="a"
-                                href="/"
-                                sx={{
-                                    mr: 2,
-                                    display: { xs: 'none', md: 'flex' },
-                                    fontFamily: 'monospace',
-                                    fontWeight: 700,
-                                    letterSpacing: '.3rem',
-                                    color: 'inherit',
-                                    textDecoration: 'none',
-                                }}
-                            >
-                                <img src={logo} />
-                            </Typography>
-                            
+        <AppBar sx={{ background: "var(--bg-color)" }} position="static">
+            <Grid container sx={{ "alignItems": 'center', 'justiyContent': 'space-evenly' }}>
+            <Grid item md={1}></Grid>
+        <Grid item md={2}>
+          <Toolbar disableGutters>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                textDecoration: 'none',
+              }}
+            >
+              <Link> <img src={logo} /></Link>
+            </Typography>
+          </Toolbar>
+        </Grid>
 
-                            <Typography
-                            variant="h5"
-                            noWrap
-                            component="a"
-                            href=""
-                            sx={{
-                                mr: 2,
-                                display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1,
-                                fontFamily: 'monospace',
-                                fontWeight: 700,
-                                letterSpacing: '.3rem',
-                                color: 'inherit',
-                                textDecoration: 'none',
-                            }}
-                        >
-                            <img src={logo} />
+        <Grid item md={5}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <MenuLink data={data} styleObject={{ color: 'black' }} />
+          </Box>
+        </Grid>
+        {/* for mobile */}
+        <Typography
+          variant="h5"
+          noWrap
+          component="a"
+          href=""
+          sx={{
+            ml: 2,
+            display: { xs: 'flex', md: 'none' },
+            flexGrow: 1,
+            fontWeight: 700,
+            letterSpacing: '.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          <Link> <img src={logo} /></Link>
+        </Typography>
+        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="black"
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+            }}
+          >
+            <MenuLink data={data} styleObject={{ "color": 'black' }} />
+          </Menu>
+        </Box>
+        {/* for mobile */}
 
-                        </Typography>
 
-                    </Toolbar>
-                    </Grid>
-                    <Grid item md={5} >
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, }}>
-                            <MenuLink data={data} styleObj={{ color: "#000" }} menuStyle={{ display: "flex", flexDirection: "column" }} />
-                        </Box>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                            <IconButton
-                                size="large"
-                                aria-label="account of current user"
-                                aria-controls="menu-appbar"
-                                aria-haspopup="true"
-                                onClick={handleOpenNavMenu}
-                                color="black"
-                            >
-                                <MenuIcon />
-                            </IconButton>
-                            <Menu
-                                id="menu-appbar"
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'bottom',
-                                    horizontal: 'right',
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
-                                sx={{
-                                    display: { xs: 'block', md: 'none' },
-                                }}
-                            >
-                                <MenuLink data={data} styleObj={{ color: "#000" }} />
-                            </Menu>
-                        </Box>
-                    </Grid>
-                    <Grid item md={3}>
+
+                <Grid item md={3}>
                     <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                            <TextField
+                        <TextField
                             type="search"
                             size="small"
-                            label="search"
+                            placeholder="search"
                             variant="outlined"
                             fullWidth
-                            InputProps={{
-                                style: {
-                                    borderRadius: 0,
-                                    border: "transparent"
+                            sx={{
+                                "& fieldset": {
+                                    border: "1px solid #e7e6e8 !important",
+                                    borderRadius: 0
                                 },
                             }}
-                            sx={{...themeStyles.headerSearchInput}}
-                            />
-                            <Button variant="contained" size="large" sx={{...themeStyles.searchInputBtn}}><SearchIcon /> </Button>
+                        />
+                        <Button variant="contained" size="large" sx={{ ...themeStyles.searchInputBtn }}><SearchIcon /> </Button>
 
-                        </Box>
-                    </Grid>
+                    </Box>
                 </Grid>
-                
-                
-                
-               
-            </AppBar>
+            </Grid>
+
+
+
+
+        </AppBar>
     );
 }
 export default NavBar;

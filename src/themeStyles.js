@@ -18,23 +18,27 @@ export const theme = createTheme({
 
 
 export const themeStyles = {
-    topBar: {
-        "backgroundColor": "var(--violet)",
-        "fontSize": "16px",
-        "color": "var(--white)",
-        "fontFamily": "var(--josefin)",
-        "fontWeight": "600",
-        "height":"44px",
-        "alignItems": "center",
-    },
+  topBar: {
+    height: { xs: "100%" },
+    justifyContent: "space-evenly",
+    paddingTop: { xs: "10px", lg: 0 },
+  },
     btnMenu : {
         "color": "#fff",
         "textTransform": "capitalize",
         "fontFamily": "var(--josefin)",
         "fontSize": "16px",
         "fontWeight": "600",
+        "paddingLeft": { xs: 0 },
         "textDecoration": "none",
     },
+    updatesHeading: {
+      fontFamily: 'var(--josefin)',
+      fontSize: '35px',
+      color: '#151875',
+      textAlign: 'center',
+      letterSpacing: '0.0015em'
+  },
     topbarIcon: {
         "marginLeft": "-8px"
     },
@@ -44,6 +48,7 @@ export const themeStyles = {
         "textDecoration": "none",
         display: "block"
     },
+
     searchInputBtn: {
         borderRadius: 0,
         backgroundColor: 'var(--pink)',
@@ -53,6 +58,19 @@ export const themeStyles = {
         '&:focus': {
           backgroundColor: 'var(--pink)',
         },
+    },
+    discountBtn: {
+      borderRadius: 0,
+      color: "var(--white)",
+      padding: "15px 48px",
+      marginTop: "20px",
+      backgroundColor: "var(--pink)",
+      "&:hover": {
+        backgroundColor: "var(--pink)",
+      },
+      "&:focus": {
+        backgroundColor: "var(--pink)",
+      },
     },
     mainHeading : {
         fontFamily: 'var(--josefin)',

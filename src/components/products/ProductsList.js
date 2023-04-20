@@ -159,7 +159,7 @@ function ProductsList() {
       </Container>
       <Container maxWidth={"md"} disableGutters>
         <ProductsFilters />
-        {/* <ProductsListVertical /> */}
+        <ProductsListVertical />
         <Grid container>
           <Grid item md={3}  >
             <ProductMultiFilters selectedOption={selectedProductBrandOption} handleFilters={handleProductBrandFilters} filterData={filterData.productBrands} />

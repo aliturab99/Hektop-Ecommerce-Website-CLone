@@ -30,57 +30,6 @@ function ProductsListVertical() {
         <div>
             <Grid container columnSpacing={1} mb={5}>
                 <ShopProductCard
-                    productImage={shopProduct1}
-                    title={"RevolvingChair"}
-                    price={"$42.00"}
-                    discount={"$65.00"}
-                    saleText={"50% OFF"}
-                    isMobile={isMobile}
-                    columnNumber={3}
-                    paperStyle={{}}
-                    imageHoverStyle={{ backgroundColor: "#EBF4F3" }}
-                    iconHoverStyle={{ backgroundColor: "#fff" }}
-                    paperHoverStyle={{ border: "none" }}
-                    saleTagHoverStyle={{ visibility: 'hidden' }}
-                    imageBoxStyle={{}}
-                    imageStyle={{}}
-                    saleTagStyle={{}}
-                    saleBoxStyle={{}}
-                    iconsStyle={{}}
-                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF"  }}
-                    titleStyle={{ ...themeStyles.productListProductTitle }}
-                    priceStyle={{}}
-                    discountStyle={{}}
-                    PaperElevation={"0"}
-                    priceBoxStyle ={ { marginTop: "20px" } }
-
-                />
-                <ShopProductCard
-                    productImage={shopProduct2}
-                    title={"RevolvingChair"}
-                    price={"$42.00"}
-                    discount={"$65.00"}
-                    saleText={"50% OFF"}
-                    isMobile={isMobile}
-                    columnNumber={3}
-                    paperStyle={{}}
-                    imageHoverStyle={{ backgroundColor: "#EBF4F3" }}
-                    iconHoverStyle={{ backgroundColor: "#fff" }}
-                    paperHoverStyle={{ border: "none" }}
-                    saleTagHoverStyle={{ visibility: 'hidden' }}
-                    imageBoxStyle={{}}
-                    imageStyle={{}}
-                    saleTagStyle={{}}
-                    saleBoxStyle={{}}
-                    iconsStyle={{}}
-                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF"  }}
-                    titleStyle={{ ...themeStyles.productListProductTitle }}
-                    priceStyle={{}}
-                    discountStyle={{}}
-                    PaperElevation={"0"}
-                    priceBoxStyle ={ { marginTop: "20px" } }
-                    />
-                <ShopProductCard
                     productImage={shopProduct3}
                     title={"RevolvingChair"}
                     price={"$42.00"}
@@ -93,18 +42,20 @@ function ProductsListVertical() {
                     iconHoverStyle={{ backgroundColor: "#fff" }}
                     paperHoverStyle={{ border: "none" }}
                     saleTagHoverStyle={{ visibility: 'hidden' }}
-                    imageBoxStyle={{}}
-                    imageStyle={{}}
+                    imageBoxStyle={{ width: "100%", height: "270px" }}
+                    imageStyle={{ width: "100%" }}
                     saleTagStyle={{}}
                     saleBoxStyle={{}}
                     iconsStyle={{}}
-                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF"  }}
+                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF" }}
                     titleStyle={{ ...themeStyles.productListProductTitle }}
                     priceStyle={{}}
                     discountStyle={{}}
-                    PaperElevation={"0"}
-                    priceBoxStyle ={ { marginTop: "20px" } }
-                    />
+                    PaperElevation={0}
+                    priceBoxStyle={{ marginTop: "20px" }}
+
+                />
+
                 <ShopProductCard
                     productImage={shopProduct4}
                     title={"RevolvingChair"}
@@ -118,8 +69,8 @@ function ProductsListVertical() {
                     iconHoverStyle={{ backgroundColor: "#fff" }}
                     paperHoverStyle={{ border: "none" }}
                     saleTagHoverStyle={{ visibility: 'hidden' }}
-                    imageBoxStyle={{}}
-                    imageStyle={{}}
+                    imageBoxStyle={{ width: "100%", height: "270px" }}
+                    imageStyle={{ width: "100%" }}
                     saleTagStyle={{}}
                     saleBoxStyle={{}}
                     iconsStyle={{}}
@@ -127,11 +78,64 @@ function ProductsListVertical() {
                     titleStyle={{ ...themeStyles.productListProductTitle }}
                     priceStyle={{}}
                     discountStyle={{}}
-                    PaperElevation={"0"}
-                    priceBoxStyle ={ { marginTop: "20px" } }
+                    PaperElevation={0}
+                    priceBoxStyle={{ marginTop: "20px" }}
 
                 />
-                
+                <ShopProductCard
+                    productImage={shopProduct5}
+                    title={"RevolvingChair"}
+                    price={"$42.00"}
+                    discount={"$65.00"}
+                    saleText={"50% OFF"}
+                    isMobile={isMobile}
+                    columnNumber={3}
+                    paperStyle={{}}
+                    imageHoverStyle={{ backgroundColor: "#EBF4F3" }}
+                    iconHoverStyle={{ backgroundColor: "#fff" }}
+                    paperHoverStyle={{ border: "none" }}
+                    saleTagHoverStyle={{ visibility: 'hidden' }}
+                    imageBoxStyle={{ width: "100%", height: "270px" }}
+                    imageStyle={{ width: "100%" }}
+                    saleTagStyle={{}}
+                    saleBoxStyle={{}}
+                    iconsStyle={{}}
+                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF" }}
+                    titleStyle={{ ...themeStyles.productListProductTitle }}
+                    priceStyle={{}}
+                    discountStyle={{}}
+                    PaperElevation={0}
+                    priceBoxStyle={{ marginTop: "20px" }}
+
+                />
+                <ShopProductCard
+                    productImage={shopProduct6}
+                    title={"RevolvingChair"}
+                    price={"$42.00"}
+                    discount={"$65.00"}
+                    saleText={"50% OFF"}
+                    isMobile={isMobile}
+                    columnNumber={3}
+                    paperStyle={{}}
+                    imageHoverStyle={{ backgroundColor: "#EBF4F3" }}
+                    iconHoverStyle={{ backgroundColor: "#fff" }}
+                    paperHoverStyle={{ border: "none" }}
+                    saleTagHoverStyle={{ visibility: 'hidden' }}
+                    imageBoxStyle={{ width: "100%", height: "270px" }}
+                    imageStyle={{ width: "100%" }}
+                    saleTagStyle={{}}
+                    saleBoxStyle={{}}
+                    iconsStyle={{}}
+                    detailsBoxStyle={{ "flexDirection": "column", alignItems: "center", border: "1px solid #E7E6EF" }}
+                    titleStyle={{ ...themeStyles.productListProductTitle }}
+                    priceStyle={{}}
+                    discountStyle={{}}
+                    PaperElevation={0}
+                    priceBoxStyle={{ marginTop: "20px" }}
+
+                />
+  
+
             </Grid>
         </div>
     )

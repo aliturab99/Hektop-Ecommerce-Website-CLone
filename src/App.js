@@ -1,20 +1,21 @@
-import { Box, Typography } from '@mui/material';
-import { Container } from '@mui/system';
-import { Router, Routes } from 'react-router-dom';
 import './App.css';
 import AppRoutes from './AppRoutes';
 import Footer from './components/commonComponents/footer/Footer';
 import Header from './components/commonComponents/header/Header';
+import { useLocation } from "react-router-dom";
+
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <AppRoutes />
-      
-          <Footer />
+  const location = useLocation();
+  const endpoint = location.pathname;
+  const isAdminPanel = endpoint === "/admin" || endpoint === "/admin/" ||endpoint === "/admin/users/add" || endpoint === "/admin/users/add/" || endpoint === "/admin/login" || endpoint === "/admin/login" ? true : false;
 
-    </div>
+
+  return (<div className="">
+    {!isAdminPanel && <Header />}
+    <AppRoutes />
+    {!isAdminPanel && <Footer />}
+  </div>
   );
 }
 

@@ -141,29 +141,33 @@ export default function ProductsFilters() {
         md={4}
         xs={12}
         sx={{
-         ...themeStyles.filterSearchInputContainer
+         ...themeStyles.filterSearchInputContainer,
+         
         }}
       >
         <Typography
           sx={{
-            ...themeStyles.filterViewText
+            ...themeStyles.filterViewText,
+            display:{ md : "flex", xs:"none" }
           }}
         >
           View:
         </Typography>
         <WindowIcon
           sx={{
-            ...themeStyles.filterWindowIcon
+            ...themeStyles.filterWindowIcon,
+            display:{ md : "flex", xs:"none" }
           }}
         />
         <FormatListBulletedIcon
-          sx={{ color: "var(--off-blue)", fontSize: "20px" }}
+          sx={{ color: "var(--off-blue)", fontSize: "20px", display:{ md : "flex", xs:"none" } }}
         />
         <Box>
           <TextField
             id="outlined-basic"
             variant="outlined"
             size="small"
+            placeholder="Search"
             sx={{
               ...themeStyles.filterSearchInput
             }}

@@ -1,23 +1,20 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/commonComponents/header/Header';
+import {  Route, Routes } from 'react-router-dom';
+import Template from './admin/components/layout/Template';
+import AddUser from './admin/components/user/AddUser';
+import Login from './admin/Login';
 import Home from './components/commonComponents/home/Home';
 import ShoppingCart from './components/commonComponents/products/ShoppingCard';
 import CheckOut from './components/products/CheckOut';
 import OrderCompleted from './components/products/OrderCompleted';
 import ProductDetails from './components/products/ProductDetails';
 import ProductsList from './components/products/ProductsList';
-import Login from './pages/Login';
 
-function AppRoutes () {
+function AppRoutes() {
 
     const routes = [
         {
-          path: '/',
-          element: Home,
-        },
-        {
-            path: '/ENGLISH',
-            element: Login,
+            path: '/',
+            element: Home,
         },
         {
             path: '/products',
@@ -36,20 +33,33 @@ function AppRoutes () {
             element: CheckOut,
         },
         {
-            path:"/order-complete",
+            path: "/order-complete",
             element: OrderCompleted
-        }
+        },
+        //admin routes
+        {
+            path: '/admin',
+            element: Template,
+        },
+        {
+            path: '/admin/login',
+            element: Login,
+        },
+        
     ];
 
     return (
-            <Routes>
-                {
-                    routes.map((route, index) => (
-                        <Route key={index} exact path={route.path} element={<route.element />} />
-                    ))
-                }
-            </Routes>
-    ); 
+        <Routes>
+            {
+                routes.map((route, index) => (
+                    <Route key={index} exact path={route.path} element={<route.element />} />
+                ))
+            }
+            <Route path="/admin" element={<Template />}>
+                <Route path="users/add" element={<AddUser />} />
+            </Route>
+        </Routes>
+    );
 
 
 }

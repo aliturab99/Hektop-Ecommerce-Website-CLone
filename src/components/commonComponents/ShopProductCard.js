@@ -3,6 +3,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import { Box, Grid, Paper, Typography, Button, Rating } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function ShopProductCard({
@@ -61,19 +62,24 @@ function ShopProductCard({
           }
 
         }}>
-          <Box className="imageBox" display="flex" justifyContent="center" alignItems="center" sx={{
-
-            backgroundColor: 'var(--product-background-hover)',
-            position: 'relative',
-            ...imageBoxStyle
-          }}>
-            <img
-              style={{
-                maxWidth: '100%',
-                height: isMobile ? "90%" : 'auto',
-                ...imageStyle,
-              }}
-              src={productImage} />
+          <Box className="imageBox"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            sx={{
+              backgroundColor: 'var(--product-background-hover)',
+              position: 'relative',
+              ...imageBoxStyle
+            }}>
+            <Link to="details" >
+              <img
+                style={{
+                  maxWidth: '100%',
+                  height: isMobile ? "90%" : 'auto',
+                  ...imageStyle,
+                }}
+                src={productImage} />
+            </Link>
             {/* Top Left Sale Tag */}
             <Box className="saleTagBox" sx={{ visibility: 'hidden', ...saleBoxStyle }}>
               <span className="saleTag" style={{
@@ -113,17 +119,14 @@ function ShopProductCard({
           <Box display="flex" alignItems="baseline" pt={3} px={1} justifyContent='space-between' className="detailsBox" paddingBottom={1} sx={{ ...detailsBoxStyle }}>
             {
               rating ?
-                <Box sx={{textAlign: "center"}}>
-                  <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", ...titleStyle }}>{title}</Typography>
+                <Box sx={{ textAlign: "center" }}>
+                  <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", marginY: "10px", ...titleStyle }}>{title}</Typography>
                   <Rating value={rating} readOnly size='small' />
                 </Box> :
-                <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", ...titleStyle }}>{title}</Typography>
-
+                <Typography className="productTitle" sx={{ ...themeStyles.productTitle, color: 'var(--off-blue)', fontSize: '16px', fontFamily: "var(--josefin)", fontWeight: "normal", ...titleStyle }}>{title}</Typography>  
             }
-            {/* // {
-                //   rating && <Rating value={rating} readOnly size='small' />
-                // } */}
 
+            
             <Box display="flex" alignItems="baseline" sx={{ ...priceBoxStyle }} flexDirection="row" justifyContent="space-between">
               <Typography className="productOtherDetails" sx={{ ...themeStyles.productPrice, fontFamily: 'var(--josefin)', marginRight: '20px', ...priceStyle }}>{price}</Typography>
               <Typography className="productOtherDetails" mt={priceTextMargin || 0} sx={{ ...themeStyles.productPrice, fontFamily: 'var(--josefin)', textDecorationLine: 'line-through', color: 'var(--pink)', fontSize: '12px', lineHeight: '14px', ...discountStyle }}>{discount}</Typography>
@@ -134,6 +137,6 @@ function ShopProductCard({
       </Box>
     </Grid>
   )
-}
+} 
 
 export default ShopProductCard
